@@ -13,11 +13,15 @@ const ctx = canvas.getContext('2d');
 
 //creating a default speed which I will use in game function
 //reduced speed to three but need to test this on mobile and larger canvas
-let speed = 3;
+let speed = 5;
 
 //Add code to create grid inside the canvas
+
 let tileCount = 20;
-let tileSize = canvas.width / tileCount -2;//this will make the tile size fit inside the grid
+let tileBlock = canvas.width / tileCount;
+let tileSize = tileBlock - 2;
+// let tileCount = 20;
+// let tileSize = canvas.width / tileCount -2;//this will make the tile size fit inside the grid
 
 //create the snake object
 let snakeHeadX = 5;
@@ -77,23 +81,32 @@ document.body.addEventListener('keydown', keyDown);
 // right arrow	39
 // down arrow	40
 function keyDown(event){
+    event.preventDefault();
     //if user presses up
     if(event.keyCode == 38){
+        if(yVelocity == 1)
+            return
         yVelocity = -1;
         xVelocity = 0;
     }
     //if user presses down
     if(event.keyCode == 40){
+        if(yVelocity == -1)
+            return
         yVelocity = 1;
         xVelocity = 0;
     }
     //if user presses left
     if(event.keyCode == 37){
+        if(xVelocity == 1)
+            return
         yVelocity = 0;
         xVelocity = -1;
     }
     //if user presses right
     if(event.keyCode == 39){
+        if(xVelocity == -1)
+            return
         yVelocity = 0;
         xVelocity = 1;
     }
@@ -107,11 +120,19 @@ function gameFood(){
 
 //check if snake has eaten food and update positon
 function eatFood(){
-    if(foodX === snakeHeadX && foodY === snakeHeadY){
+    if(foodX === snakeHeadX && foodY == snakeHeadY){
         //going to get a random number and assign to food using same rand num method as ilovemaths
         foodX = Math.floor(Math.random() * tileCount);
         foodY = Math.floor(Math.random() * tileCount);
     }
 }
+
+
+// canvas.addEventListener('touchstart', e =>{
+//     console.log('');
+//     console.log(e);
+// });
+
+
 
 snakeGame();
