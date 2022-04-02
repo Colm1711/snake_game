@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Snake Game</title>
 </head>
-<body>
-    <canvas id="myGameCanvas"><canvas>
-    <script src="assets/js/script.js"></script>
+<body onload="draw();">
+    <header>
+        <h1>Snake</h1>
+    </header>
+    <section>
+        <!--Canvas that game will play on-->
+        <canvas id="gameCanvas">
+            <p>Your browser does not support running this snake game</p>
+        </canvas>
+    </section>
+    <!--import of javascript for game-->
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
