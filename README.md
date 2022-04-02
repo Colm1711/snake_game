@@ -213,6 +213,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) : For code on how to implement, draw and interact with canvas sourced here.
 
+-   [CSS tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/) : Codes for keys in the keydown function were sourced from here.
+
 ### Content
 
 -   All content was written by the developer.
