@@ -17,11 +17,11 @@ let speed = 3;
 
 //Add code to create grid inside the canvas
 let tileCount = 20;
-let tileSize = canvas.width / tileCount -1;//this will make the tile size fit inside the grid
+let tileSize = canvas.width / tileCount -2;//this will make the tile size fit inside the grid
 
 //create the snake object
-let snakeHeadX = 7;
-let snakeHeadY = 3;
+let snakeHeadX = 5;
+let snakeHeadY = 5;
 
 //add snake velocity to control snake speed
 let xVelocity = 0;
@@ -39,6 +39,8 @@ function snakeGame(){
     gameSnake();
     //add movement to snake based on key pressed
     updateSnakeLocation();
+    //see if the snake has eaten the food
+    eatFood();
     //add food to the canvas
     gameFood();
     //set game loop and time/speed
@@ -58,7 +60,6 @@ function gameSnake(){
 }
 
 //Need to make snake move around screen and let user control direction
-
 //Need to update the snake position to compare against key pressed
 
 function updateSnakeLocation(){
@@ -102,6 +103,15 @@ function keyDown(event){
 function gameFood(){
     ctx.fillStyle = "orange";
     ctx.fillRect(foodX * tileCount, foodY * tileCount, tileSize, tileSize);
+}
+
+//check if snake has eaten food and update positon
+function eatFood(){
+    if(foodX === snakeHeadX && foodY === snakeHeadY){
+        //going to get a random number and assign to food using same rand num method as ilovemaths
+        foodX = Math.floor(Math.random() * tileCount);
+        foodY = Math.floor(Math.random() * tileCount);
+    }
 }
 
 snakeGame();
