@@ -41,24 +41,79 @@ let snakeTail = 2;
 let xVelocity = 0;
 let yVelocity = 0;
 
+//set score for start of game
+//BUG HERE AS WHEN SET TO ZERO IT IS RETURNING ONE AS STARTING SCORE
+let score = -1;
+
 //create food object starting position
 let foodX = 5;
 let foodY = 5;
 
 //game loop function, controls the overall game
 function snakeGame(){
+    //add movement to snake based on key pressed
+    updateSnakeLocation();
+
+    //keep track of game status
+    let result = gameStatus();
+    if(result){
+        return;
+    }
+
     //creates game screen
     gameScreen();
     //add snake to canvas
     gameSnake();
-    //add movement to snake based on key pressed
-    updateSnakeLocation();
     //see if the snake has eaten the food
     eatFood();
     //add food to the canvas
     gameFood();
+    //gamescore
+    gameScore();
     //set game loop and time/speed
     setTimeout(snakeGame, 1000/speed);
+}
+
+//control whether game is over due to head impacting body or walls
+function gameStatus(){
+    let gameOver = false;
+    //walls
+    //for x axis right to left
+    if(snakeHeadX <0){
+        gameOver = true;
+    }
+    else if(snakeHeadX === tileCount){
+        gameOver = true
+    }
+    //same for y axis up and down
+    if(snakeHeadY <0){
+        gameOver = true;
+    }
+    else if(snakeHeadY === tileCount){
+        gameOver = true
+    }
+    //checks to see if user has crashed and returns game over message
+    if (gameOver) {
+        ctx.fillStyle = "white";
+        ctx.font = "50px Georgia";
+    
+        if (gameOver) {
+          ctx.fillStyle = "white";
+          ctx.font = "35px Georgia";
+          ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
+        }
+    
+        ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
+      }
+    
+      return gameOver;
+}
+
+//Keep Game score
+function gameScore(){
+    ctx.fillStyle = "fuchsia";
+  ctx.font = "12px Georgia";
+  ctx.fillText("Score: " + score, canvas.width - 50, 12);
 }
 
 //need to create the screen to run game and to reset when game starts again
@@ -148,6 +203,7 @@ function eatFood(){
         foodX = Math.floor(Math.random() * tileCount);
         foodY = Math.floor(Math.random() * tileCount);
         snakeTail++;
+        score++;
     }
 }
 
