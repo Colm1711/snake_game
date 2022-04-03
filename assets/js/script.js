@@ -77,6 +77,13 @@ function snakeGame(){
 //control whether game is over due to head impacting body or walls
 function gameStatus(){
     let gameOver = false;
+
+    //has game started. This will make sure GameOver doesn't log at game start
+    //if snake has no velocity then game has not started
+    if(yVelocity === 0 && xVelocity ===0){
+        return false
+    }
+
     //walls
     //for x axis right to left
     if(snakeHeadX <0){
@@ -92,6 +99,17 @@ function gameStatus(){
     else if(snakeHeadY === tileCount){
         gameOver = true
     }
+
+    //body segment crash
+    for(let i=0; i < snakeBodySegs.length; i++){
+        let seg = snakeBodySegs[i];
+        if(seg.x === snakeHeadX && seg.y === snakeHeadY){
+            gameOver = true;
+            break;
+        }
+    }
+
+
     //checks to see if user has crashed and returns game over message
     if (gameOver) {
         ctx.fillStyle = "white";
@@ -111,9 +129,9 @@ function gameStatus(){
 
 //Keep Game score
 function gameScore(){
-    ctx.fillStyle = "fuchsia";
-  ctx.font = "12px Georgia";
-  ctx.fillText("Score: " + score, canvas.width - 50, 12);
+    ctx.fillStyle = "white";
+  ctx.font = "16px Georgia";
+  ctx.fillText("Score: " + score, canvas.width - 60, 12);
 }
 
 //need to create the screen to run game and to reset when game starts again
