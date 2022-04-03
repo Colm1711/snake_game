@@ -7,6 +7,14 @@
 //#6 score
 //#7 gameover// wall collison
 
+//this is class to hold constructor for snake segments of body
+class snakeBodySeg{
+    constructor(x, y){
+        this.x = x;
+        this.y = y;
+    }
+}
+
 //creating canvas objects
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
@@ -16,16 +24,18 @@ const ctx = canvas.getContext('2d');
 let speed = 5;
 
 //Add code to create grid inside the canvas
-
 let tileCount = 20;
 let tileBlock = canvas.width / tileCount;
 let tileSize = tileBlock - 2;
-// let tileCount = 20;
-// let tileSize = canvas.width / tileCount -2;//this will make the tile size fit inside the grid
+
 
 //create the snake object
 let snakeHeadX = 5;
 let snakeHeadY = 5;
+
+//array to hold snake segments
+const snakeBodySegs = [];
+let snakeTail = 2;
 
 //add snake velocity to control snake speed
 let xVelocity = 0;
@@ -59,8 +69,21 @@ function gameScreen(){
 
 //snake function to draw the snake to canvas
 function gameSnake(){
-    ctx.fillStyle = "green"; //setting snake to green, need to style later for head/body
-    ctx.fillRect(snakeHeadX* tileCount, snakeHeadY* tileCount, tileSize, tileSize);
+    //this controls drawing body to snake after food is eaten
+    ctx.fillStyle = "lawngreen";
+    for(let i = 0; i < snakeBodySegs.length; i++){
+        let seg =   snakeBodySegs[i];
+        ctx.fillRect(seg.x * tileCount, seg.y * tileCount, tileSize, tileSize);
+    }
+
+    snakeBodySegs.push(new snakeBodySeg(snakeHeadX, snakeHeadY));//adds item to end of the array near the snake head
+    while(snakeBodySegs.length > snakeTail){
+        snakeBodySegs.shift(); //removes the last item if it is greater than snake tail lenght
+    }
+    //draws snake head to canvas
+    ctx.fillStyle = "darkolivegreen";
+    ctx.fillRect(snakeHeadX * tileCount, snakeHeadY * tileCount, tileSize, tileSize);
+        
 }
 
 //Need to make snake move around screen and let user control direction
@@ -124,14 +147,9 @@ function eatFood(){
         //going to get a random number and assign to food using same rand num method as ilovemaths
         foodX = Math.floor(Math.random() * tileCount);
         foodY = Math.floor(Math.random() * tileCount);
+        snakeTail++;
     }
 }
-
-
-// canvas.addEventListener('touchstart', e =>{
-//     console.log('');
-//     console.log(e);
-// });
 
 
 
