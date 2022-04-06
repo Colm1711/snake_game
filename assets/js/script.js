@@ -112,9 +112,6 @@ function gameStatus(){
 
     //checks to see if user has crashed and returns game over message
     if (gameOver) {
-        ctx.fillStyle = "white";
-        ctx.font = "50px Georgia";
-    
         if (gameOver) {
           ctx.fillStyle = "white";
           ctx.font = "35px Georgia";
@@ -123,7 +120,7 @@ function gameStatus(){
     
         ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
       }
-    
+      console.log(score);
       return gameOver;
 }
 
@@ -225,6 +222,8 @@ function eatFood(){
     }
 }
 
-
-
 snakeGame();
+
+// exports list
+//exporting score so can be used in the score.js file
+export{score};
