@@ -128,7 +128,7 @@ function gameStatus(){
 function gameScore(){
     ctx.fillStyle = "white";
   ctx.font = "16px Georgia";
-  ctx.fillText("Score: " + score, canvas.width - 60, 12);
+  ctx.fillText("Score: " + score, canvas.width - 70, 12);
 }
 
 //need to create the screen to run game and to reset when game starts again
