@@ -116,11 +116,17 @@ function gameStatus(){
           ctx.fillStyle = "white";
           ctx.font = "35px Georgia";
           ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
+
+          //collecting users name and final score to present as object at end of game
+          let finalScore = localStorage.getItem('Score');
+          let finalPlayer = localStorage.getItem('PlayerName');
+          let currentPlayer = {finalPlayer , finalScore};
+          console.log(currentPlayer);
         }
     
         ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
       }
-      localStorage.setItem('Score', JSON.stringify(score));
+      localStorage.setItem('Score', JSON.stringify(score));      
       return gameOver;
 }
 
