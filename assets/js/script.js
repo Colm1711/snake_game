@@ -120,7 +120,7 @@ function gameStatus(){
     
         ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
       }
-      console.log(score);
+      localStorage.setItem('Score', JSON.stringify(score));
       return gameOver;
 }
 
@@ -224,6 +224,3 @@ function eatFood(){
 
 snakeGame();
 
-// exports list
-//exporting score so can be used in the score.js file
-export{score};
