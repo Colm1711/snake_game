@@ -214,6 +214,10 @@ function keyDown(event){
         yVelocity = 0;
         xVelocity = 1;
     }
+    //Makes 'R' kdey the refresh button
+    if(event.keyCode == 82){
+        location.reload();
+    }
 }
 
 //food function to add to canvas
