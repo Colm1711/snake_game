@@ -118,15 +118,20 @@ function gameStatus(){
           ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
 
           //collecting users name and final score to present as object at end of game
-          let finalScore = localStorage.getItem('Score');
-          let finalPlayer = localStorage.getItem('PlayerName');
+          let finalScore = sessionStorage.getItem('Score');
+          let finalPlayer = sessionStorage.getItem('PlayerName');
           let currentPlayer = {finalPlayer , finalScore};
           console.log(currentPlayer);
+          let winners = []
+          winners.push(currentPlayer);
+          console.log(winners);
+          let winnersList = localStorage.setItem('Winners', JSON.stringify(winners));
+          console.log(winnersList);
         }
     
         ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
       }
-      localStorage.setItem('Score', JSON.stringify(score));      
+      sessionStorage.setItem('Score', JSON.stringify(score));      
       return gameOver;
 }
 

@@ -5,7 +5,7 @@
 function setUserName(){
     let player = prompt("Please enter your name:");
     //setting to session storage in case change of player
-    localStorage.setItem('PlayerName', JSON.stringify(player));
+    sessionStorage.setItem('PlayerName', JSON.stringify(player));
 }
 
 setUserName();
