@@ -16,16 +16,6 @@ canvas{
     box-shadow: grey 20px 20px 50px;
 }
 
-/*Add styling to li's to limit to 3*/
-/* Hide all on load*/
-li { 
-    display: none; 
-} 
-/* Display first three a max of 3*/
-li:nth-child(-n+3) { 
-    display: list-item; 
-} 
-
 #myModal{
     display: none;
 }
