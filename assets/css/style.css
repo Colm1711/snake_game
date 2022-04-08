@@ -25,3 +25,7 @@ li {
 li:nth-child(-n+3) { 
     display: list-item; 
 } 
+
+#myModal{
+    display: none;
+}
