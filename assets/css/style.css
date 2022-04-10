@@ -22,7 +22,6 @@ canvas{
     max-width: 100%;
 }
 
-
 .grid{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -37,6 +36,13 @@ canvas{
     grid-column: 2/4;
     display: flex;
     align-items: flex-end;
+}
+
+.icons{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #myModal{
