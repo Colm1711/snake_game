@@ -16,8 +16,6 @@ body{
 
 /*Styling for game canvas*/
 canvas{
-    /*will add this back in later for mobile*/
-    /*width: 100%;*/
     box-shadow: grey 20px 20px 50px;
     max-width: 100%;
 }
@@ -43,8 +41,41 @@ canvas{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-size: 1.5em;
+    padding-top: 1.3em;
 }
 
+/*Modal styling*/
 #myModal{
     display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 5em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#myModal div{
+    background-color: #C1E1C1;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+  }
+
+#closeModal{
+    color: #ff6961 ;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+  color: #aaa196;
+  text-decoration: none;
+  cursor: pointer;
 }
