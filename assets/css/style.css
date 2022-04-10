@@ -57,7 +57,7 @@ section {
 .copyright {
     display: flex;
     justify-content: space-around;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 /*Modal styling*/
