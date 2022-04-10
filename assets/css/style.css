@@ -1,19 +1,42 @@
 /*RESETS*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
 /*Basic styling for body*/
 body{
-    padding: 0px;
-    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
 /*Styling for game canvas*/
 canvas{
     /*will add this back in later for mobile*/
     /*width: 100%;*/
     box-shadow: grey 20px 20px 50px;
+    max-width: 100%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.grid img {
+    max-width: 100%;
+    grid-column: 1/2;
+}
+
+.grid h1 {
+    grid-column: 2/4;
+    display: flex;
+    align-items: flex-end;
 }
 
 #myModal{
