@@ -7,8 +7,7 @@
 
 /*Basic styling for body*/
 body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -20,29 +19,45 @@ canvas{
     max-width: 100%;
 }
 
+/*CLASSES*/
+section {
+    display: grid;
+    justify-content: center;
+    align-items: cent;
+    padding: 1em;
+}
+
+/*grid class to at 6 colulmns*/
 .grid{
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
 
+/*styling for logo in the header*/
 .grid img {
     max-width: 100%;
     grid-column: 1/2;
 }
-
+/*styling for site name in the header*/
 .grid h1 {
     grid-column: 2/4;
     display: flex;
     align-items: flex-end;
 }
-
+/*styling for social icons in footer*/
 .icons{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 1.5em;
     padding-top: 1.3em;
+}
+/*styling for copyright*/
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
 }
 
 /*Modal styling*/
@@ -50,12 +65,14 @@ canvas{
     display: none;
     position: fixed; 
     z-index: 1;
-    padding-top: 5em;
+    padding: 3em 0.5em 0.5em 0.5em;
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* Fallback color */
+    background-color: rgb(0,0,0);
+    /* Black w/ opacity */ 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 #myModal div{
