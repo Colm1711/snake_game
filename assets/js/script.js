@@ -19,6 +19,7 @@ class snakeBodySeg{
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
+
 //creating a default speed which I will use in game function
 //reduced speed to three but need to test this on mobile and larger canvas
 let speed = 5;
@@ -144,10 +145,16 @@ function gameScore(){
 
 //need to create the screen to run game and to reset when game starts again
 function gameScreen(){
+    const currentTheme = localStorage.getItem("Theme");
+    if(currentTheme == 'light'|| null){
     ctx.fillStyle = "black";
     ctx.fillRect(0 ,0 , canvas.width, canvas.height);
 }
-
+else{
+    ctx.fillStyle = "rgb(60,237,183)";
+    ctx.fillRect(0 ,0 , canvas.width, canvas.height);
+}
+}
 //snake function to draw the snake to canvas
 function gameSnake(){
     //this controls drawing body to snake after food is eaten
