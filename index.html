@@ -9,12 +9,18 @@
 </head>
 <body>
     <header class="grid">
+        <!--Site logo-->
         <img src="./assets/images/snake.jpg" alt="snake logo"> 
+        <!--Site logo name-->
         <h1>Snake</h1>
+        <!--Dark mode toggle-->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </header>
     <section>
         <!--Canvas that game will play on-->
-        <!--making canvas bigger for debug will change this later to be responsive on mobile-->
         <canvas id="gameCanvas" height="400" width="400">
             <p>Your browser does not support running this snake game</p>
         </canvas>
