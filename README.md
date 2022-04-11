@@ -4,7 +4,7 @@
 
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src=""></h2>
 
 ## User Experience (UX)
 
@@ -214,7 +214,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [CSS tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/) : Codes for keys in the keydown function were sourced from here.
 
--   [Stocklib](https://www.stocklib.com/media-111821774/cobra-icon-cobra-linear-symbol-design-from-india-collection-simple-outline-element-vector-illustration-on-white-background.html?keyword=king%20snake%20outline) : FOr Logo image
+-   [Stocklib](https://www.stocklib.com/media-111821774/cobra-icon-cobra-linear-symbol-design-from-india-collection-simple-outline-element-vector-illustration-on-white-background.html?keyword=king%20snake%20outline) : For Logo image
+
+-   [UXPlanet](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6) : Dark Theme styling
+
+-   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button
+
+-   [Youtube](https://www.youtube.com/watch?v=7Azlj0f9vas&t=2545s)  : Coding snake on canvas
 
 ### Content
 
