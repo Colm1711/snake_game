@@ -8,12 +8,16 @@
 }
 
 /*Root vars*/
-:root{
+body{
   --bg: #e1f0f7;
   --blck: #010101;
   --grn: #3bedb7;
 }
 
+body.dark-mode {
+  --blck: #3bedb7;
+  --bg: #121212;
+}
 
 /*Basic styling for body*/
 body{
@@ -25,9 +29,11 @@ body{
 }
 
 
+
+
 /*Styling for game canvas*/
 canvas{
-    box-shadow: grey 20px 20px 50px;
+    /* box-shadow: grey 20px 20px 50px; */
     max-width: 100%;
 }
 
