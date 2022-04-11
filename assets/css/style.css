@@ -5,13 +5,21 @@
     box-sizing:border-box;
 }
 
+/*Root vars*/
+:root{
+  --bg: #e1f0f7;
+  --blck: #010101;
+  --grn: #3bedb7;
+}
+
+
 /*Basic styling for body*/
 body{
     display: grid;
     justify-content: center;
     align-items: center;
-    background: #f4f9fd;
-    color: #010101;
+    background: var(--bg);
+    color: var(--blck);
 }
 
 
@@ -86,17 +94,17 @@ section {
     width: 1.5em;
     left: 4px;
     bottom: 3px;
-    background-color: #f4f9fd;
+    background-color: var(--bg);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #3bedb7;
+    background-color: var(--grn);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #3bedb7;
+    box-shadow: 0 0 1px var(--grn);
   }
   
   input:checked + .slider:before {
@@ -123,6 +131,16 @@ section {
     font-size: 2em;
     padding-top: 1.3em;
 }
+
+.fa-brands, .copyright{
+  color: var(--grn);
+  
+}
+
+.fa-brands:hover{
+  color: var(--blck);
+}
+
 /*styling for copyright*/
 .copyright {
     display: flex;
@@ -145,7 +163,7 @@ section {
 }
 
 #myModal div{
-    background-color: #C1E1C1;
+    background-color:var(--grn);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -168,8 +186,8 @@ section {
 
 /*Modal button styling*/
 .button{
-  background-color: #3bedb7;
-  color: #010101;
+  background-color: var(--grn);
+  color:var(--blck);
   padding: 0.5em 0.5em;
   text-align: center;
   text-decoration: none;
@@ -183,12 +201,12 @@ section {
   }
 
   .button {
-    background-color: #f4f9fd; 
-    color: #010101; 
-    border: 2px solid #3bedb7;
+    background-color:  var(--bg); 
+    color: var(--blck); 
+    border: 2px solid var(--grn);
   }
   
   .button:hover {
-    background-color: #3bedb7;
-    color: #010101;
+    background-color: var(--grn);
+    color: var(--blck);
   }
