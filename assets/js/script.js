@@ -114,9 +114,6 @@ function gameStatus(){
     //checks to see if user has crashed and returns game over message
     if (gameOver) {
         if (gameOver) {
-          ctx.fillStyle = "white";
-          ctx.font = "35px Georgia";
-          ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
 
           //collecting users name and final score to present as object at end of game
           let finalScore = sessionStorage.getItem('Score');
@@ -128,9 +125,11 @@ function gameStatus(){
           console.log(winners);
           let winnersList = localStorage.setItem('Winners', JSON.stringify(winners));
           console.log(winnersList);
+
+          ctx.fillStyle = "white";
+          ctx.font = "20px Georgia";
+          ctx.fillText(`Unlucky ${JSON.parse(finalPlayer)}, final score was ${finalScore}`, canvas.width / 5.5, canvas.height / 2);    
         }
-    
-        ctx.fillText("Game Over!", canvas.width / 3.5, canvas.height / 2);
       }
       sessionStorage.setItem('Score', JSON.stringify(score));      
       return gameOver;
