@@ -10,13 +10,13 @@
 /*Root vars*/
 body{
   --bg: #e1f0f7;
-  --blck: #010101;
+  --blck: #18191a;
   --grn: #3bedb7;
 }
 
 body.dark-mode {
   --blck: #3bedb7;
-  --bg: #121212;
+  --bg: #18191a;
 }
 
 /*Basic styling for body*/
@@ -33,7 +33,7 @@ body{
 
 /*Styling for game canvas*/
 canvas{
-    /* box-shadow: grey 20px 20px 50px; */
+    border: 3px groove var(--blck);
     max-width: 100%;
 }
 
@@ -187,7 +187,8 @@ section {
     padding: 20px;
     border: 1px solid #888;
     width: fit-content;
-    color: var(--blck);
+    /*set maually as don't want to change on dar mode*/
+    color: #010101;
   }
 
 #closeModal{
@@ -229,4 +230,18 @@ section {
   .button:hover {
     background-color: var(--grn);
     color: var(--blck);
+  }
+
+  /*Testing overlay for username*/
+  #overlay{
+    position: absolute;
+    display: none;
+    padding: 11em 2.1em 0em 0em;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59,238,183, 0.5);
+    color: #010101;
+    z-index: 0;
+    cursor: pointer;
   }
