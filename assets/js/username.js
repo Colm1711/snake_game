@@ -1,17 +1,26 @@
-//This contains the code for the score board that can either be displayed by clicking button to reveal//
-//Or will display on end of game//
+//Display username on load and user will be able to update
+
+//event listeners for when the overlay button is clicked on screen
+overlayOn.addEventListener('click', function(){document.getElementById("overlay").style.display = "block";
+  });
+
+overlay.addEventListener('click',  function(){document.getElementById("overlay").style.display = "none";
+  });
+
 
 //collecting user name to set as Key 
 function setUserName(){
     let checkName = sessionStorage.getItem('PlayerName');
-    //if statement to if username is set in session storage
-    if(checkName){
-        alert(`Welcome back ${checkName}!`)
+    //if statement to if no username or is null is set in session storage
+    if(JSON.parse(checkName) === null){
+        //prompt user to set it
+        let player = prompt("Please enter your name:");
+        //setting to session storage in case change of player
+        sessionStorage.setItem('PlayerName', JSON.stringify(player));
+        ///otherswise write name to welcome message
     }else{
-    let player = prompt("Please enter your name:");
-    //setting to session storage in case change of player
-    sessionStorage.setItem('PlayerName', JSON.stringify(player));
-    }
+        document.getElementById("usernameMessage").innerHTML = `Welcome back ${JSON.parse(checkName)}!`;
+}
 }
 
 setUserName();
