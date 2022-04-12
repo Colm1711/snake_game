@@ -73,6 +73,10 @@ function snakeGame(){
     gameScore();
     //set game loop and time/speed
     setTimeout(snakeGame, 1000/speed);
+    //adding difficulty to the game. speed doubles when user hits 10 or more score.
+    score >= 10 ? speed = 10 : speed =5;
+
+
 }
 
 //control whether game is over due to head impacting body or walls
@@ -269,6 +273,9 @@ function eatFood(){
         snakeTail++;
         score++;
     }
+
+
+
 }
 
 snakeGame();
