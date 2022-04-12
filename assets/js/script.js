@@ -139,8 +139,8 @@ function gameStatus(){
 //Keep Game score
 function gameScore(){
     ctx.fillStyle = "white";
-  ctx.font = "16px Georgia";
-  ctx.fillText("Score: " + score, canvas.width - 70, 12);
+    ctx.font = "16px Georgia";
+    ctx.fillText("Score: " + score, canvas.width - 70, 12);    
 }
 
 //need to create the screen to run game and to reset when game starts again
@@ -151,27 +151,46 @@ function gameScreen(){
     ctx.fillRect(0 ,0 , canvas.width, canvas.height);
 }
 else{
-    ctx.fillStyle = "rgb(60,237,183)";
+    ctx.fillStyle = "rgb(151,197,2)";
     ctx.fillRect(0 ,0 , canvas.width, canvas.height);
 }
 }
 //snake function to draw the snake to canvas
 function gameSnake(){
-    //this controls drawing body to snake after food is eaten
-    ctx.fillStyle = "lawngreen";
-    for(let i = 0; i < snakeBodySegs.length; i++){
-        let seg =   snakeBodySegs[i];
-        ctx.fillRect(seg.x * tileCount, seg.y * tileCount, tileSize, tileSize);
-    }
-
-    snakeBodySegs.push(new snakeBodySeg(snakeHeadX, snakeHeadY));//adds item to end of the array near the snake head
-    while(snakeBodySegs.length > snakeTail){
-        snakeBodySegs.shift(); //removes the last item if it is greater than snake tail lenght
-    }
-    //draws snake head to canvas
-    ctx.fillStyle = "darkolivegreen";
-    ctx.fillRect(snakeHeadX * tileCount, snakeHeadY * tileCount, tileSize, tileSize);
-        
+    const currentTheme = localStorage.getItem("Theme");
+    if(currentTheme == 'light'|| null){
+        //this controls drawing body to snake after food is eaten
+        ctx.fillStyle = "lawngreen";
+        for(let i = 0; i < snakeBodySegs.length; i++){
+            let seg =   snakeBodySegs[i];
+            ctx.fillRect(seg.x * tileCount, seg.y * tileCount, tileSize, tileSize);
+        }
+    
+        snakeBodySegs.push(new snakeBodySeg(snakeHeadX, snakeHeadY));//adds item to end of the array near the snake head
+        while(snakeBodySegs.length > snakeTail){
+            snakeBodySegs.shift(); //removes the last item if it is greater than snake tail lenght
+        }
+        //draws snake head to canvas
+        ctx.fillStyle = "darkolivegreen";
+        ctx.fillRect(snakeHeadX * tileCount, snakeHeadY * tileCount, tileSize, tileSize);
+}
+else{
+        //this controls drawing body to snake after food is eaten in dark mode
+        ctx.fillStyle = "black";
+        for(let i = 0; i < snakeBodySegs.length; i++){
+            let seg =   snakeBodySegs[i];
+            ctx.fillRect(seg.x * tileCount, seg.y * tileCount, tileSize, tileSize);
+        }
+    
+        snakeBodySegs.push(new snakeBodySeg(snakeHeadX, snakeHeadY));//adds item to end of the array near the snake head  in dark mode
+        while(snakeBodySegs.length > snakeTail){
+            snakeBodySegs.shift(); //removes the last item if it is greater than snake tail lenght  in dark mode
+        }
+        //draws snake head to canvas  in dark mode
+        ctx.fillStyle = "black";
+        ctx.fillRect(snakeHeadX * tileCount, snakeHeadY * tileCount, tileSize, tileSize);
+}
+       
 }
 
 //Need to make snake move around screen and let user control direction
@@ -229,8 +248,17 @@ function keyDown(event){
 
 //food function to add to canvas
 function gameFood(){
-    ctx.fillStyle = "orange";
+
+    const currentTheme = localStorage.getItem("Theme");
+    if(currentTheme == 'light'|| null){
+        ctx.fillStyle = "orange";
+        ctx.fillRect(foodX * tileCount, foodY * tileCount, tileSize, tileSize);
+}
+//draws food to canvas in darkmode
+else{
+    ctx.fillStyle = "black";
     ctx.fillRect(foodX * tileCount, foodY * tileCount, tileSize, tileSize);
+}
 }
 
 //check if snake has eaten food and update positon
