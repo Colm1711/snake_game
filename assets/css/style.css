@@ -65,9 +65,9 @@ section {
 .grid h1 {
   display: grid;
   align-items: end;
-  grid-column: 3/5;
+  grid-column: 2/6;
   font-family: 'Mrs Sheppards', cursive;
-  font-size: 6em;
+  font-size: 4em;
   justify-content: center;
   color: var(--grn);
   text-shadow: 5px 5px 0 #18191A  , 10px 10px 0 var(--hover);
