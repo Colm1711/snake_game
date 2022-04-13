@@ -74,7 +74,7 @@ function snakeGame(){
     //set game loop and time/speed
     setTimeout(snakeGame, 1000/speed);
     //adding difficulty to the game. speed doubles when user hits 10 or more score.
-    score >= 10 ? speed = 10 : speed =5;
+    score >= 10 ? speed = 8 : speed = 5;
 
 
 }
@@ -132,7 +132,7 @@ function gameStatus(){
 
           ctx.fillStyle = "white";
           ctx.font = "20px Georgia";
-          ctx.fillText(`Unlucky ${JSON.parse(finalPlayer)}, final score was ${finalScore}`, canvas.width / 5.5, canvas.height / 2);    
+          ctx.fillText(`Unlucky ${JSON.parse(finalPlayer)}, final score was ${finalScore}`, canvas.width / 8, canvas.height / 2);    
         }
       }
       sessionStorage.setItem('Score', JSON.stringify(score));      
@@ -179,7 +179,7 @@ function gameSnake(){
 }
 else{
         //this controls drawing body to snake after food is eaten in dark mode
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
         for(let i = 0; i < snakeBodySegs.length; i++){
             let seg =   snakeBodySegs[i];
             ctx.fillRect(seg.x * tileCount, seg.y * tileCount, tileSize, tileSize);
@@ -190,7 +190,7 @@ else{
             snakeBodySegs.shift(); //removes the last item if it is greater than snake tail lenght  in dark mode
         }
         //draws snake head to canvas  in dark mode
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
         ctx.fillRect(snakeHeadX * tileCount, snakeHeadY * tileCount, tileSize, tileSize);
 }
        
@@ -259,7 +259,7 @@ function gameFood(){
 }
 //draws food to canvas in darkmode
 else{
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
     ctx.fillRect(foodX * tileCount, foodY * tileCount, tileSize, tileSize);
 }
 }
