@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Sheppards&family=Syne&display=swap');
+
+
 /*RESETS*/
 *{
     padding:0;
@@ -12,6 +16,8 @@ body{
   --bg: #e1f0f7;
   --blck: #18191a;
   --grn: #3bedb7;
+  --hover: #bb86fc;
+  
 }
 
 body.dark-mode {
@@ -26,6 +32,7 @@ body{
     align-items: center;
     background: var(--bg);
     color: var(--blck);
+    font-family: 'Syne', sans-serif;
 }
 
 
@@ -56,9 +63,14 @@ section {
 }
 /*styling for site name in the header*/
 .grid h1 {
-    display: flex;
-    align-items: flex-end;
-    grid-column: 2/4;
+  display: grid;
+  align-items: end;
+  grid-column: 3/5;
+  font-family: 'Mrs Sheppards', cursive;
+  font-size: 6em;
+  justify-content: center;
+  color: var(--grn);
+  text-shadow: 5px 5px 0 #18191A  , 10px 10px 0 var(--hover);
 }
 
 /*Dark Theme slider*/
@@ -146,7 +158,7 @@ section {
 }
 
 .fa-brands:hover{
-  color: var(--blck);
+  color: var(--hover);
 }
 
 /*styling for copyright*/
@@ -223,13 +235,13 @@ section {
 
   .button {
     background-color:  var(--bg); 
-    color: var(--blck); 
+    color: var(--grn); 
     border: 2px solid var(--grn);
   }
   
   .button:hover {
     background-color: var(--grn);
-    color: var(--blck);
+    color: var(--hover);
   }
 
   /*Overlay for username onload*/
