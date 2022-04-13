@@ -218,6 +218,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [UXPlanet](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6) : Dark Theme styling
 
+-   [MaterialDesign](https://material.io/design/color/dark-theme.html#ui-application) - Dark Theme color styling
+
 -   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button
 
 -   [Youtube](https://www.youtube.com/watch?v=7Azlj0f9vas&t=2545s)  : Coding snake on canvas
