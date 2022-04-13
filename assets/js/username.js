@@ -3,7 +3,6 @@
 //event listeners for when the overlay button is clicked on screen
 overlay.addEventListener('click',  function(){document.getElementById("overlay").style.display = "none";
   });
-
 //collecting user name to set as Key 
 function setUserName(){
     let checkName = sessionStorage.getItem('PlayerName');
@@ -14,10 +13,11 @@ function setUserName(){
         //setting to session storage in case change of player
         sessionStorage.setItem('PlayerName', JSON.stringify(player));
         ///otherswise write name to welcome message and display on load
-    }else{
+    }
+    else{
         document.getElementById("usernameMessage").innerHTML = `Welcome back ${JSON.parse(checkName)}!`;
         window.onload = function(){document.getElementById("overlay").style.display = "block"; }
-      }
-}
+    }
+  }
 
-setUserName();
+  setUserName();

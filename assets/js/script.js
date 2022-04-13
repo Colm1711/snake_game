@@ -76,6 +76,7 @@ function snakeGame(){
     //adding difficulty to the game. speed doubles when user hits 10 or more score.
     score >= 10 ? speed = 8 : speed = 5;
 
+    
 
 }
 
