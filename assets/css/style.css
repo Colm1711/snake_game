@@ -258,13 +258,14 @@ section {
     text-align: center;
     font-size: 3em;
   }
-
+/* username display message positioning*/
   #usernameMessage{
     display: flex;
     justify-content: center;
     padding: 200px 0px;
   }
-
+/* mute button styling */
   #mute-button{
     color: var(--hover);
+    font-size: 1.3em;
   }
