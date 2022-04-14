@@ -15,7 +15,7 @@ function setUserName(){
         ///otherswise write name to welcome message and display on load
     }
     else{
-        document.getElementById("usernameMessage").innerHTML = `Welcome back ${JSON.parse(checkName)}!`;
+        document.getElementById("usernameMessage").innerHTML = `Let's play snake ${JSON.parse(checkName)}!`;
         window.onload = function(){document.getElementById("overlay").style.display = "block"; }
     }
   }
