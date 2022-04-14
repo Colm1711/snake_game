@@ -8,84 +8,87 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Snake Game</title>
 </head>
-<body>
-    <header class="grid">
-        <!--Site logo-->
-        <img src="./assets/images/snake.jpg" alt="snake logo"> 
-        <!--Site logo name-->
-        <h1>Snake</h1>
-        <!--Dark mode toggle-->
-        <label class="switch">
-            <input type="checkbox" class="btn-toggle-drk"> 
-            <span class="slider round"></span>
-        </label>
-    </header>
-    <section id="game-canvas">
-        <!--Canvas that game will play on-->
-        <canvas id="gameCanvas" height="400" width="400">
-            <p>Your browser does not support running this snake game</p>
-        </canvas>
-        <!--Button to mute and unmute ausio for game-->
-        <div ><i id="mute-button" class="fa-solid fa-volume-xmark"></i></div>
-        <audio src="/assets/audio/snake-jazz.mp3">snake jazz audio</audio>
-    </section>
-    <section id="modal-container">
-        <button id="openModal" class="button">Game instructions</button>
-        <div id="myModal">
-            <div>
-                <span id="closeModal">x</span>
-                <h2>Game instructions</h2>
-                <p>Welcome to 3210 snake tribute game! <br>
-                    Please find controls below to move snake around screen. <br>
-                    Win by getting the highscore by eating all the food! Have fun!</p>
-                <ol>
-                    <li>
-                        Move Up by using the up arrow Key <i class="fa-solid fa-square-caret-up"></i>
-                    </li>
-                    <li>
-                        Move Left by using the left arrow Key <i class="fa-solid fa-square-caret-left"></i>
-                    </li>
-                    <li>
-                        Move Right by using the right arrow Key <i class="fa-solid fa-square-caret-right"></i>
-                    </li>
-                    <li>
-                        Move Down by using the down arrow Key <i class="fa-solid fa-square-caret-down"></i>
-                    </li>
-                    <li>
-                        Press 'R' button to refresh the Game 
-                    </li>
-                </ol>
+<body class="body-grid">
+    <div id="cont-1"></div>
+    <div id="cont-2">    
+        <header class="grid">
+            <!--Site logo name-->
+            <h1>Snake</h1>
+            <!--Dark mode toggle-->
+            <label class="switch">
+                <input type="checkbox" class="btn-toggle-drk"> 
+                <span class="slider round"></span>
+            </label>
+        </header>
+        <section id="game-canvas">
+            <!--Canvas that game will play on-->
+            <canvas id="gameCanvas" height="400" width="400">
+                <p>Your browser does not support running this snake game</p>
+            </canvas>
+            <!--Button to mute and unmute ausio for game-->
+            <div ><i id="mute-button" class="fa-solid fa-volume-xmark"></i></div>
+            <audio src="/assets/audio/snake-jazz.mp3">snake jazz audio</audio>
+        </section>
+        <section id="modal-container">
+            <button id="openModal" class="button">Game instructions</button>
+            <div id="myModal">
+                <div>
+                    <span id="closeModal">x</span>
+                    <h2>Game instructions</h2>
+                    <p>Welcome to 3210 snake tribute game! <br>
+                        Please find controls below to move snake around screen. <br>
+                        Win by getting the highscore by eating all the food! Have fun!</p>
+                    <ol>
+                        <li>
+                            Move Up by using the up arrow Key <i class="fa-solid fa-square-caret-up"></i>
+                        </li>
+                        <li>
+                            Move Left by using the left arrow Key <i class="fa-solid fa-square-caret-left"></i>
+                        </li>
+                        <li>
+                            Move Right by using the right arrow Key <i class="fa-solid fa-square-caret-right"></i>
+                        </li>
+                        <li>
+                            Move Down by using the down arrow Key <i class="fa-solid fa-square-caret-down"></i>
+                        </li>
+                        <li>
+                            Press 'R' button to refresh the Game 
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <!--this is the overlay that loads on reload if username is not set-->
-        <div id="overlay"><p id="usernameMessage"></p></div>
-    </section>
-    <footer>
-        <div>
-            <ul class="icons">
-                <li>
-                    <a href="https://www.facebook.com/" rel="noopner" target="_blank" aria-label="visit my facebook profile (opens in a new tab)">
-                        <i aria-hidden="true" class="fa-brands fa-facebook-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" rel="noopner" target="_blank" aria-label="visit my instagram profile(opens in a new tab)">
-                        <i aria-hidden="true" class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/" rel="noopner" target="_blank" aria-label="visit my twitter account (opens in a new tab)">
-                        <i aria-hidden="true" class="fa-brands fa-twitter-square"></i>
-                    </a>
-                </li>
-            </ul>   
-            <small class="copyright">Colm O'Sullivan 2022&copy;</small>         
-        </div>
+            <!--this is the overlay that loads on reload if username is not set-->
+            <div id="overlay"><p id="usernameMessage"></p></div>
+        </section>
+        <footer>
+            <div>
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.facebook.com/" rel="noopner" target="_blank" aria-label="visit my facebook profile (opens in a new tab)">
+                            <i aria-hidden="true" class="fa-brands fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" rel="noopner" target="_blank" aria-label="visit my instagram profile(opens in a new tab)">
+                            <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" rel="noopner" target="_blank" aria-label="visit my twitter account (opens in a new tab)">
+                            <i aria-hidden="true" class="fa-brands fa-twitter-square"></i>
+                        </a>
+                    </li>
+                </ul>   
+                <small class="copyright">Colm O'Sullivan 2022&copy;</small>         
+            </div>
+    </div>
+    <div id="cont-3">
+    </div>
     </footer>
     <!--import of javascript for game-->
     <script type='module'  src="assets/js/script.js"></script>
     <script type='module' src="assets/js/username.js"></script>
-    <script type='module' src="assets/js/modal.js"></script>
+    <script type='module' src="assets/js/utilities.js"></script>
     <script type='module' src="assets/js/darkmode.js"></script>
     <!--fontawesome import-->
     <script src="https://kit.fontawesome.com/35fe0ba271.js" crossorigin="anonymous"></script>
