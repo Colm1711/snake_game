@@ -150,7 +150,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   
+-   Score is not updating correctly, need to set at -1 to have displayed as 0.
+
+-   on desktop screens there is a white space appearing at end of page.
+
+-   Light mode sometimes displays the dark mode canvas screen.
 
 ## Deployment
 
