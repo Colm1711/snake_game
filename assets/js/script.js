@@ -1,12 +1,3 @@
-//will refactor code and break up objects later:
-//#1 game
-//#2 canvas
-//#3 snake
-//#4 food
-//#5 eat food
-//#6 score
-//#7 gameover// wall collison
-
 //this is class to hold constructor for snake segments of body
 class snakeBodySeg{
     constructor(x, y){

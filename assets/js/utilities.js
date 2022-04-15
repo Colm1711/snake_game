@@ -29,7 +29,7 @@ function run(){
         console.log('something went wrong 1');
         audio.play();
     }
-    if(muteClassList === "fa-volume-high"){
+    if(muteClassList === 'fa-volume-high'){
         document.getElementById('mute-button').classList.remove('fa-volume-high');
         document.getElementById('mute-button').classList.add('fa-volume-xmark');
         console.log('something went wrong 2');
