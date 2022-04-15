@@ -5,6 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark light">
+<meta name="description" content="Free Online Snake Game, try to see what highscore you can get">
+<meta name="keywords" content="Snake Game, Snake, Game, 3210 Snake, Retro, Retro game">
+<meta name="author" content="Colm O'Sullivan">
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Snake Game</title>
 </head>
@@ -27,10 +30,11 @@
             <canvas id="gameCanvas" height="400" width="400">
                 <p>Your browser does not support running this snake game</p>
             </canvas>
-            <!--Button to mute and unmute ausio for game-->
+            <!--Button to mute and unmute audio for game-->
             <div ><i id="mute-button" class="fa-solid fa-volume-xmark"></i></div>
             <audio src="/assets/audio/snake-jazz.mp3">snake jazz audio</audio>
         </section>
+        <!--This will hold Modal for game instructions for user-->
         <section id="modal-container">
             <button id="openModal" class="button">Game instructions</button>
             <div id="myModal">
@@ -64,6 +68,7 @@
         </section>
         <footer>
             <div>
+                <!--Font awesome icons with links to social medias-->
                 <ul class="icons">
                     <li>
                         <a href="https://www.facebook.com/" rel="noopner" target="_blank" aria-label="visit my facebook profile (opens in a new tab)">
