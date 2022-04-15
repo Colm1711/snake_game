@@ -21,15 +21,23 @@ body{
 /*ROOT VARS*/
 body{
   --bg: #e1f0f7;
-  --blck: #18191a;
-  --grn: #3bedb7;
+  --text: #18191a;
+  --canvas-border: #18191a;
+  --header-first: #3bedb7;
+  --header-second: #18191a;
+  --header-third: #bb86fc;
+  --slider-bg: #3bedb7;
+  --icons: #3bedb7;
+  --modal: #3bedb7;
+  --mutebtn: #bb86fc;
+  --containers: #bb86fc;
   --hover: #bb86fc;
   
 }
 /* Handles dark mode changes */
 body.dark-mode {
-  --blck: #3bedb7;
   --bg: #18191a;
+  --text: #3bedb7;
 }
 
 /*Basic styling for body*/
@@ -38,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
     background: var(--bg);
-    color: var(--blck);
+    color: var(--text);
     font-family: 'Syne', sans-serif;
     width: 100%; 
     height: 100%; 
@@ -46,7 +54,7 @@ body{
 
 /*Styling for game canvas*/
 canvas{
-    border: 3px groove var(--blck);
+    border: 3px groove var(--canvas-border);
     max-width: 100%;
 }
 
@@ -77,8 +85,8 @@ section {
   font-family: 'Mrs Sheppards', cursive;
   font-size: 4em;
   justify-content: center;
-  color: var(--grn);
-  text-shadow: 5px 5px 0 #18191A  , 10px 10px 0 var(--hover);
+  color: var(--header-first);
+  text-shadow: 5px 5px 0 var(--header-second)  , 10px 10px 0 var(--header-third);
 }
 
 /*Dark Theme slider*/
@@ -126,11 +134,11 @@ section {
   }
   
   input:checked + .slider {
-    background-color: var(--grn);
+    background-color: var(--slider-bg);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--grn);
+    box-shadow: 0 0 1px var(--slider-bg);
   }
   
   input:checked + .slider:before {
@@ -161,7 +169,7 @@ section {
 
 /* Set colors of social icons */
 .fa-brands{
-  color: var(--grn);
+  color: var(--icons);
   
 }
 /* Add on hover effect social icons */
@@ -174,7 +182,7 @@ section {
     display: flex;
     justify-content: space-around;
     padding-top: 2em;
-    color: var(--blck);
+    color: var(--text);
 }
 
 /*Canvas styling*/
@@ -209,7 +217,7 @@ section {
 }
 
 #myModal div{
-    background-color:var(--grn);
+    background-color:var(--modal);
     margin: auto;
     padding: 1em;
     border: 1px solid black;
@@ -232,10 +240,10 @@ section {
   cursor: pointer;
 }
 
-/*Modal button styling*/
+/*button styling*/
 .button{
-  background-color: var(--grn);
-  color:var(--blck);
+  background-color: var(--modal);
+  color:var(--text);
   padding: 0.5em 0.5em;
   text-align: center;
   text-decoration: none;
@@ -250,12 +258,12 @@ section {
 
   .button {
     background-color:  var(--bg); 
-    color: var(--grn); 
-    border: 2px solid var(--grn);
+    color: var(--modal); 
+    border: 2px solid var(--modal);
   }
   
   .button:hover {
-    background-color: var(--grn);
+    background-color: var(--modal);
     color: var(--hover);
   }
 
@@ -281,7 +289,7 @@ section {
   }
 /* mute button styling */
   #mute-button{
-    color: var(--hover);
+    color: var(--mutebtn);
     font-size: 1.3em;
   }
 
@@ -321,7 +329,7 @@ grid-column: 2/6;
 }
 /* adds background color and sizing to containors */
 #cont-1, #cont-3{
-  background: var(--hover);
+  background: var(--containers);
   width: 100%;
   height: 100%;
 }
