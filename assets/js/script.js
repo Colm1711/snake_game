@@ -87,7 +87,7 @@ function gameStatus(){
     //has game started. This will make sure GameOver doesn't log at game start
     //if snake has no velocity then game has not started
     if(yVelocity === 0 && xVelocity ===0){
-        return false
+        return false;
     }
 
     //walls
@@ -96,14 +96,14 @@ function gameStatus(){
         gameOver = true;
     }
     else if(snakeHeadX === tileCount){
-        gameOver = true
+        gameOver = true;
     }
     //same for y axis up and down
     if(snakeHeadY <0){
         gameOver = true;
     }
     else if(snakeHeadY === tileCount){
-        gameOver = true
+        gameOver = true;
     }
 
     //body segment crash
@@ -125,7 +125,7 @@ function gameStatus(){
           let finalPlayer = sessionStorage.getItem('PlayerName');
           let currentPlayer = {finalPlayer , finalScore};
           console.log(currentPlayer);
-          let winners = []
+          let winners = [];
           winners.push(currentPlayer);
           console.log(winners);
           let winnersList = localStorage.setItem('Winners', JSON.stringify(winners));
@@ -219,28 +219,28 @@ function keyDown(event){
     //if user presses up
     if(event.keyCode == 38){
         if(yVelocity == 1)
-            return
+            return;
         yVelocity = -1;
         xVelocity = 0;
     }
     //if user presses down
     if(event.keyCode == 40){
         if(yVelocity == -1)
-            return
+            return;
         yVelocity = 1;
         xVelocity = 0;
     }
     //if user presses left
     if(event.keyCode == 37){
         if(xVelocity == 1)
-            return
+            return;
         yVelocity = 0;
         xVelocity = -1;
     }
     //if user presses right
     if(event.keyCode == 39){
         if(xVelocity == -1)
-            return
+            return;
         yVelocity = 0;
         xVelocity = 1;
     }

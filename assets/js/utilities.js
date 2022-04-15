@@ -13,9 +13,14 @@ closBtn.addEventListener('click', (e) =>{
     modalObj.style.display='none';
 });
 
+//This add mute/unmute funcationaltiy to button on screen
+//define mute button
 let mute = document.getElementById('mute-button');
+//add event listener
 mute.addEventListener('click', run);
+//define audio
 let audio = document.querySelector('audio');
+//This function updates the button on display by altering class list and also plays and pauses the audio
 function run(){
     let muteClassList = mute.classList[1];
     if(muteClassList === 'fa-volume-xmark'){
@@ -30,6 +35,7 @@ function run(){
         console.log('something went wrong 2');
         audio.pause();
     }
+    //if this function fails will priont to console
     else{
         console.log('something went wrong 3');
     }   

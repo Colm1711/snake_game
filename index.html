@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Snake Game</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Snake Game</title>
 </head>
 <body class="body-grid">
-    <div id="cont-1"></div>
+    <div id="cont-1">
+    </div>
     <div id="cont-2">    
         <header class="grid">
             <!--Site logo name-->
@@ -22,6 +23,7 @@
         </header>
         <section id="game-canvas">
             <!--Canvas that game will play on-->
+            <h6 id="canvas-tag">Snake 3210</h6>
             <canvas id="gameCanvas" height="400" width="400">
                 <p>Your browser does not support running this snake game</p>
             </canvas>
@@ -81,16 +83,16 @@
                 </ul>   
                 <small class="copyright">Colm O'Sullivan 2022&copy;</small>         
             </div>
-    </div>
+        </footer>
+    </div>    
     <div id="cont-3">
     </div>
-    </footer>
-    <!--import of javascript for game-->
-    <script type='module'  src="assets/js/script.js"></script>
-    <script type='module' src="assets/js/username.js"></script>
-    <script type='module' src="assets/js/utilities.js"></script>
-    <script type='module' src="assets/js/darkmode.js"></script>
-    <!--fontawesome import-->
-    <script src="https://kit.fontawesome.com/35fe0ba271.js" crossorigin="anonymous"></script>
+<!--import of javascript for game-->
+<script type='module'  src="assets/js/script.js"></script>
+<script type='module' src="assets/js/username.js"></script>
+<script type='module' src="assets/js/utilities.js"></script>
+<script type='module' src="assets/js/darkmode.js"></script>
+<!--fontawesome import-->
+<script src="https://kit.fontawesome.com/35fe0ba271.js" crossorigin="anonymous"></script>
 </body>
 </html>

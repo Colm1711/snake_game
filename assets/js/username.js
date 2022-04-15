@@ -1,7 +1,8 @@
 //Display username on load and user will be able to update
 
 //event listeners for when the overlay button is clicked on screen
-overlay.addEventListener('click',  function(){document.getElementById("overlay").style.display = "none";
+let overlay = document.getElementById("overlay");
+overlay.addEventListener('click',  function(){overlay.style.display = "none";
   });
 //collecting user name to set as Key 
 function setUserName(){
@@ -16,7 +17,7 @@ function setUserName(){
     }
     else{
         document.getElementById("usernameMessage").innerHTML = `Let's play snake ${JSON.parse(checkName)}!`;
-        window.onload = function(){document.getElementById("overlay").style.display = "block"; }
+        window.onload = function(){document.getElementById("overlay").style.display = "block"; };
     }
   }
 
