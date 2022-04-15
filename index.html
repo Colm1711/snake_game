@@ -17,45 +17,49 @@
     <div id="cont-2">    
         <header class="grid">
             <!--Site logo name-->
-            <h1>Snake</h1>
+            <h1>Snake Game</h1>
             <!--Dark mode toggle-->
-            <label class="switch">
+            <label class="switch" aria-label="Dark mode toggle">
                 <input type="checkbox" class="btn-toggle-drk"> 
-                <span class="slider round"></span>
+                <span title="Toggle light/dark mode" class="slider round" role="slider" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"></span>
             </label>
         </header>
         <section id="game-canvas">
             <!--Canvas that game will play on-->
-            <h6 id="canvas-tag">Snake 3210</h6>
+            <!--This heading is hidden by design-->
+            <h6 id="canvas-tag">Snake Game Canvas</h6>
+            <!--Canvas Game-->
             <canvas id="gameCanvas" height="400" width="400">
                 <p>Your browser does not support running this snake game</p>
             </canvas>
             <!--Button to mute and unmute audio for game-->
-            <div ><i id="mute-button" class="fa-solid fa-volume-xmark"></i></div>
-            <audio src="/assets/audio/snake-jazz.mp3">snake jazz audio</audio>
+            <div title="Click to Mute/Unmute Music">
+                <i aria-hidden="true" id="mute-button" class="fa-solid fa-volume-xmark"></i>
+                <audio aria-label="Click to Mute/Unmute Music" src="/assets/audio/snake-jazz.mp3">snake jazz audio</audio>
+            </div>
         </section>
         <!--This will hold Modal for game instructions for user-->
         <section id="modal-container">
-            <button id="openModal" class="button">Game instructions</button>
+            <button title="Game Instructions" aria-label="Open Game Instructions" id="openModal" class="button">Game instructions</button>
             <div id="myModal">
                 <div>
-                    <span id="closeModal">x</span>
+                    <span title="close" aria-label="Close Game Instructions" id="closeModal" role="button">x</span>
                     <h2>Game instructions</h2>
                     <p>Welcome to 3210 snake tribute game! <br>
                         Please find controls below to move snake around screen. <br>
                         Win by getting the highscore by eating all the food! Have fun!</p>
                     <ol>
                         <li>
-                            Move Up by using the up arrow Key <i class="fa-solid fa-square-caret-up"></i>
+                            Move Up by using the up arrow Key <i aria-hidden="true" class="fa-solid fa-square-caret-up"></i>
                         </li>
                         <li>
-                            Move Left by using the left arrow Key <i class="fa-solid fa-square-caret-left"></i>
+                            Move Left by using the left arrow Key <i aria-hidden="true" class="fa-solid fa-square-caret-left"></i>
                         </li>
                         <li>
-                            Move Right by using the right arrow Key <i class="fa-solid fa-square-caret-right"></i>
+                            Move Right by using the right arrow Key <i aria-hidden="true" class="fa-solid fa-square-caret-right"></i>
                         </li>
                         <li>
-                            Move Down by using the down arrow Key <i class="fa-solid fa-square-caret-down"></i>
+                            Move Down by using the down arrow Key <i aria-hidden="true" class="fa-solid fa-square-caret-down"></i>
                         </li>
                         <li>
                             Press 'R' button to refresh the Game 
@@ -63,13 +67,13 @@
                     </ol>
                 </div>
             </div>
-            <!--this is the overlay that loads on reload if username is not set-->
-            <div id="overlay"><p id="usernameMessage"></p></div>
+            <!--this is the overlay that loads on reload-->
+            <div id="overlay"><p aria-labelledby="overlay" id="usernameMessage"></p></div>
         </section>
         <footer>
             <div>
                 <!--Font awesome icons with links to social medias-->
-                <ul class="icons">
+                <ul class="icons" aria-label="social icons">
                     <li>
                         <a href="https://www.facebook.com/" rel="noopner" target="_blank" aria-label="visit my facebook profile (opens in a new tab)">
                             <i aria-hidden="true" class="fa-brands fa-facebook-square"></i>
@@ -92,7 +96,7 @@
     </div>    
     <div id="cont-3">
     </div>
-<!--import of javascript for game-->
+<!--import of javascripts-->
 <script type='module'  src="assets/js/script.js"></script>
 <script type='module' src="assets/js/username.js"></script>
 <script type='module' src="assets/js/utilities.js"></script>
