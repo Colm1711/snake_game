@@ -20,9 +20,24 @@ body{
 
 /*ROOT VARS*/
 body{
-  --bg: #e1f0f7;
+  --bg: #e1e8f0;
   --text: #18191a;
   --canvas-border: #18191a;
+  --header-first: #32673A ;
+  --header-second: #18191a;
+  --header-third: #7F50B4;
+  --slider-bg: #32673A;
+  --icons: #32673A;
+  --modal: #32673A;
+  --mutebtn: #7F50B4;
+  --containers: #32673A;
+  --hover: #7F50B4;
+  
+}
+/* Handles dark mode changes */
+body.dark-mode {
+  --bg: #18191a;
+  --text: #3bedb7;
   --header-first: #3bedb7;
   --header-second: #18191a;
   --header-third: #bb86fc;
@@ -32,12 +47,6 @@ body{
   --mutebtn: #bb86fc;
   --containers: #bb86fc;
   --hover: #bb86fc;
-  
-}
-/* Handles dark mode changes */
-body.dark-mode {
-  --bg: #18191a;
-  --text: #3bedb7;
 }
 
 /*Basic styling for body*/
