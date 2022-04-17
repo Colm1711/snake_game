@@ -286,15 +286,13 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [CSS tricks](https://css-tricks.com/snippets/javascript/javascript-keycodes/) : Codes for keys in the keydown function were sourced from here.
 
--   [Stocklib](https://www.stocklib.com/media-111821774/cobra-icon-cobra-linear-symbol-design-from-india-collection-simple-outline-element-vector-illustration-on-white-background.html?keyword=king%20snake%20outline) : For Logo image
-
 -   [UXPlanet](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6) : Dark Theme styling
 
 -   [MaterialDesign](https://material.io/design/color/dark-theme.html#ui-application) - Dark Theme color styling
 
--   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button
+-   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button that enables dark mode
 
--   [Youtube](https://www.youtube.com/watch?v=7Azlj0f9vas&t=2545s)  : Coding snake on canvas
+-   [Youtube](https://www.youtube.com/watch?v=7Azlj0f9vas&t=2545s)  : Coding snake on canvas and collision logic
 
 ### Content
 
@@ -304,8 +302,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my mentor Gerry McBride, my class mates, the Slack community, and all at the Code Institute for their help and support. 
 
--   Tutor support at Code Institute for their support.
+Also to my friends and family who helped test site & provide feedback and most importantly patient with me during this time!
 
 [Back to top](<#contents>)
