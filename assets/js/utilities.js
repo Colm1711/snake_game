@@ -32,11 +32,7 @@ function run(){
         document.getElementById('mute-button').classList.remove('fa-volume-high');
         document.getElementById('mute-button').classList.add('fa-volume-xmark');
         audio.pause();
-    }
-    //if this function fails will priont to console
-    else{
-        console.log('something went wrong with playing the MP3 file');
-    }   
+    } 
 }
 
 
