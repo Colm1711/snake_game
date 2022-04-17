@@ -273,7 +273,7 @@ section {
   
   .button:hover {
     background-color: var(--modal);
-    color: var(--hover);
+    color: var(--text);
   }
 
   /*Overlay for username onload*/
