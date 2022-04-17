@@ -1,5 +1,24 @@
 <h1 align="center">Snake</h1>
 
+# Contents
+
+* [**User Experience UX**](<#user-experience-ux>)
+    *  [User Stories](<#user-stories>)
+    * [Design](<#design>)
+        *  [Colour Scheme](<#colour-scheme>)
+        *  [Typography](<#typography>)
+    * [Wireframes](<#wireframes>)
+* [**Features**](<#features>)
+    * [Home](<#navigation-menu>)
+    * [Future Features](<#future-features>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Testing**](<#testing>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Media**](<#media>)
+*  [**Acknowledgements**](<#acknowledgements>)
+
 [View the live project here.])
 
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
@@ -13,39 +32,68 @@ This is the main marketing website for Code Institute. It is designed to be resp
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the game.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to  want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        2. As a First Time Visitor, I want to be able to easily navigate around the site to find content and discover new features.
+        3. As a First Time Visitor, I want to  want to locate their social media links to see their followings on social media.
 
     -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to find information about snake game.
         2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to add highcscore and to check if how I currently stand.
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to check to see if there are any newly added challenges or levels.
         2. As a Frequent User, I want to check to see if there are any new highscores.
         3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+        
 
 -   ### Design
     -   #### Colour Scheme
-        -   
+        - The colour scheme eventually chosen is one based on off white with green, purple and black. With dark mode choosen similar colors but with contrasts that suited the background color chnage to make more accessible.
+
+        - Light mode:  
+
+        <img src="assets/readme-images/green-light.png" width="300"/>  
+
+        <img src="assets/readme-images/purple-light.png" width="300"/>  
+
+        - Dark mode:  
+
+        <img src="assets/readme-images/green-dark.png " width="300"/>  
+
+        <img src="assets/readme-images/purple-dark.png " width="300"/>
+        
+
     -   #### Typography
-        -   
-    -   #### Imagery
-        -  
+        The fonts chosen were 'Mrs Sheppards' for the heading and 'Syne' for the body text. They fall back to cursive and sans-serif respectively. 
+        *  'Mrs Sheppards' was chosen for the heading to give the user an inital feeling of retro to tie in with the game. The cursive style is to increase the restor feel of the font.
+        * 'Syne' is used for the body text as it provides a nice contrast to the cursive whilst being easy to read for all.
+
+        [Back to top](<#contents>) 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View]
+    The wireframes for Snake game were produced in Balsamiq. They were designed for a full width display and with mobile device first desgin approach. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
-    -   Mobile Wireframe - [View]
+    * Mobile wireframe image  
+    <img src="assets/readme-images/snake-mobile.png" width="600"/> 
 
-    -   Contact Us Page Wireframe - [View]
+    * Tablet wireframe image  
+    <img src="assets/readme-images/snake-tablet.png" width="600"/> 
+
+    * Desktop wireframe image  
+    <img src="assets/readme-images/snake-website.png" width="600"/> 
+
+    [Back to top](<#contents>)
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all device sizes with mov+bile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
+
+- User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage.
+    <img src="assets/readme-images/welcome-snake.png" width="700"/> 
+
+- User is presented with game over message which is intended to highlight users final game score which is saved to local storage.
+    <img src="assets/readme-images/snake-score-game-over.png" width="700" height="400"/> 
 
 -   Interactive elements
 
