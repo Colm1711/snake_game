@@ -16,7 +16,7 @@
     * [Validation](<#validation>)
     * [Responsive](<#responsive>)
     * [Lighthouse](<#lighthouse>)
-    * [Testing User Stories from User Experience]()
+    * [Testing User Stories from User Experience](<#testing-user-experienece>)
 * [**Deployment**](<#deployment>)
 * [**Credits**](<#credits>)
     * [**Content**](<#content>)
@@ -189,6 +189,8 @@ Snake site has been throughly tested. All the code has been run through the [W3C
 <img src="assets/readme-images/best-prac-snake.png"/> 
 
 ### Testing User Stories from User Experience (UX) Section
+
+### Testing User Experienece
 
 -   #### First Time Visitor Goals
 
