@@ -177,11 +177,16 @@ Snake site has been throughly tested. All the code has been run through the [W3C
 ### Lighthouse
 
 #### Mobile  
-<img src="assets/readme-images/snake-game-mobile-lighthouse.png"/> 
+<img src="assets/readme-images/snake-game-mobile-lighthouse.png"/>  
+
+*   Mobile results were affected(86%) by audio file, but after compressing this reduced performance hit and brought score to 99%.
 
 #### Desktop
 <img src="assets/readme-images/snake-game-desktop-lighthouse.png"/>   
 
+*   Best practices for both lighthouse tests were affected by github related errors logging to console:
+
+<img src="assets/readme-images/best-prac-snake.png"/> 
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -293,7 +298,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [UXPlanet](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6) : Dark Theme styling
 
--   [MaterialDesign](https://material.io/design/color/dark-theme.html#ui-application) - Dark Theme color styling
+-   [MaterialDesign](https://material.io/design/color/dark-theme.html#ui-application) : Dark Theme color styling
 
 -   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button that enables dark mode
 
