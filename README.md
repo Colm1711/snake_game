@@ -26,7 +26,7 @@
 
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="assets/readme-images/snake-responsive.png"></h2>
 
 ## User Experience (UX)
 
@@ -59,9 +59,9 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
         - Dark mode:  
 
-        <img src="assets/readme-images/green-dark.png " width="300"/>  
+        <img src="assets/readme-images/green-dark.png" width="300"/>  
 
-        <img src="assets/readme-images/purple-dark.png " width="300"/>
+        <img src="assets/readme-images/purple-dark.png" width="300"/>
         
 
     -   #### Typography
@@ -305,6 +305,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) : Toggle button that enables dark mode
 
 -   [Youtube](https://www.youtube.com/watch?v=7Azlj0f9vas&t=2545s)  : Coding snake on canvas and collision logic
+
+-   [AmIResponsiveDesign](http://ami.responsivedesign.is/)  : Site responsiveness tested here.
 
 ### Content
 
