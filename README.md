@@ -1,4 +1,4 @@
-<h1 align="center">Snake</h1>
+<h1 align="center"><img src="assets/readme-images/snake-header.png" width="700" /> </h1>  
 
 # Contents
 
@@ -22,7 +22,7 @@
     * [**Content**](<#content>)
 *  [**Acknowledgements**](<#acknowledgements>)
 
-[View the live project here.])
+[View the live project here.](https://colm1711.github.io/snake_game/)
 
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
@@ -176,7 +176,12 @@ Snake site has been throughly tested. All the code has been run through the [W3C
 
 ### Lighthouse
 
-!NEED TO ADD IMAGES HERE!
+#### Mobile  
+<img src="assets/readme-images/snake-game-mobile-lighthouse.png"/> 
+
+#### Desktop
+<img src="assets/readme-images/snake-game-desktop-lighthouse.png"/>   
+
 
 ### Testing User Stories from User Experience (UX) Section
 
