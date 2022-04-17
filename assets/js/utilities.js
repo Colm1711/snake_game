@@ -26,18 +26,16 @@ function run(){
     if(muteClassList === 'fa-volume-xmark'){
         document.getElementById('mute-button').classList.remove('fa-volume-xmark');
         document.getElementById('mute-button').classList.add('fa-volume-high');
-        console.log('something went wrong 1');
         audio.play();
     }
     if(muteClassList === 'fa-volume-high'){
         document.getElementById('mute-button').classList.remove('fa-volume-high');
         document.getElementById('mute-button').classList.add('fa-volume-xmark');
-        console.log('something went wrong 2');
         audio.pause();
     }
     //if this function fails will priont to console
     else{
-        console.log('something went wrong 3');
+        console.log('something went wrong with playing the MP3 file');
     }   
 }
 
