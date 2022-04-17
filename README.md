@@ -9,14 +9,13 @@
         *  [Typography](<#typography>)
     * [Wireframes](<#wireframes>)
 * [**Features**](<#features>)
-    * [Home](<#navigation-menu>)
+    * [Current Features](<#current-features>)
     * [Future Features](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
 * [**Credits**](<#credits>)
     * [**Content**](<#content>)
-    * [**Media**](<#media>)
 *  [**Acknowledgements**](<#acknowledgements>)
 
 [View the live project here.])
@@ -68,7 +67,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
         *  'Mrs Sheppards' was chosen for the heading to give the user an inital feeling of retro to tie in with the game. The cursive style is to increase the restor feel of the font.
         * 'Syne' is used for the body text as it provides a nice contrast to the cursive whilst being easy to read for all.
 
-        [Back to top](<#contents>) 
+[Back to top](<#contents>) 
 
 *   ### Wireframes
 
@@ -83,19 +82,40 @@ This is the main marketing website for Code Institute. It is designed to be resp
     * Desktop wireframe image  
     <img src="assets/readme-images/snake-website.png" width="600"/> 
 
-    [Back to top](<#contents>)
+[Back to top](<#contents>)
 
 ## Features
 
--   Responsive on all device sizes with mov+bile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
+### Current Features
 
-- User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage.
-    <img src="assets/readme-images/welcome-snake.png" width="700"/> 
+-   Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
 
-- User is presented with game over message which is intended to highlight users final game score which is saved to local storage.
-    <img src="assets/readme-images/snake-score-game-over.png" width="700" height="400"/> 
+- Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:
+<img src="assets/readme-images/snake-header.png" width="700"/> 
 
--   Interactive elements
+- User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage.  
+<img src="assets/readme-images/welcome-snake.png" width="700"/> 
+
+- Toggle button intended to add user interaction so they can adjust website to preference which is saved to local storage.  
+<img src="assets/readme-images/snake-score-game-over.png" width="700"/> 
+
+- Modal button is there as interaction point for user. They can click on this to learn more about the game and how to play.
+<img src="assets/readme-images/snake-modal.png" width="700"/> 
+
+- Unmute/Mute button, added to give user more interaction with website to play music while playing snake game.
+<img src="assets/readme-images/snake-mute.png" width="700" height="400" />  
+<img src="assets/readme-images/snake-unmute.png"  width="700" height="400"/> 
+
+- This section is last part of users journey through site which holds copyright information and also links to social media if user wants to persuse more information on developer and game.  
+<img src="assets/readme-images/snake-footer.png" width="700"/> 
+
+### Future Features
+
+- Scoreboard modal so users can keep track of score in real time.
+
+- Game button controls for non-keyboard users of sites
+
+[Back to top](<#contents>)
 
 ## Technologies Used
 
@@ -107,24 +127,20 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
     - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+
+[Back to top](<#contents>)
 
 ## Testing
 
@@ -204,6 +220,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   Light mode sometimes displays the dark mode canvas screen.
 
+[Back to top](<#contents>)
+
 ## Deployment
 
 ### GitHub Pages
@@ -252,6 +270,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+[Back to top](<#contents>)
+
 ## Credits
 
 ### Code
@@ -282,12 +302,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Psychological properties of colours text in the README.md was found [here]
 
-### Media
-
--   All Images were created by the developer.
-
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
+
+[Back to top](<#contents>)
