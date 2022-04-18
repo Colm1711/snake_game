@@ -89,6 +89,7 @@ section {
 /*styling for site name in the header*/
 .grid h1 {
   display: grid;
+  margin: 0;
   align-items: end;
   grid-column: 1/7;
   grid-row: 2;
@@ -209,10 +210,6 @@ section {
 }
 
 /*Modal styling*/
-#modal-container{
-  padding-top: 1em;
-}
-
 /* Setting display to none by default. JS handles interaction */
 #myModal{
     display: none;
@@ -377,6 +374,11 @@ section {
   margin: 15px;
 }
 
+.arrow-buttons-cont{
+  grid-column: 4;
+  margin-left: 2em;
+}
+
 /* makes sure social icons don't strech with FLex settings as screen increases */
 .icons{
   padding-left: 25%;
@@ -414,6 +416,11 @@ grid-column: 2/6;
 #myModal div{
   padding: 10px;   
 }
+
+#openModal{
+  grid-column: 3/4;
+}
+
 }
 
  
