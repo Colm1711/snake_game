@@ -193,9 +193,52 @@ class snakeBodySeg{
     snakeHeadX = snakeHeadX + xVelocity;
     snakeHeadY = snakeHeadY + yVelocity;
     }
+
+    
+    //functions control velocity direction
+    //moves snake in up direction on grid
+    function snakeUp(){
+        yVelocity = -1;
+        xVelocity = 0;
+        return
+    }
+    //moves snake in down direction on grid
+    function snakeDown(){
+        yVelocity = 1;
+        xVelocity = 0;
+        return
+    }
+    //moves snake in left direction on grid
+    function snakeLeft(){   
+        yVelocity = 0;
+        xVelocity = -1;
+        return
+    }
+    //moves snake in right direction on grid
+    function snakeRight(){
+        yVelocity = 0;
+        xVelocity = 1;
+        return
+    }
     
     //add event listener for keys that user presses and set direction
     document.body.addEventListener('keydown', keyDown);
+
+    document.getElementById('up-arrow').addEventListener('click', function clicked(){
+        snakeUp();
+    });
+
+    document.getElementById('left-arrow').addEventListener('click', function clicked(){
+        snakeLeft();
+    });
+
+    document.getElementById('down-arrow').addEventListener('click', function clicked(){
+        snakeDown();
+    });
+
+    document.getElementById('right-arrow').addEventListener('click', function clicked(){
+        snakeRight();
+    });
     
     // Swtich case to handle when user presses buttons
     // left arrow - 37
@@ -203,43 +246,39 @@ class snakeBodySeg{
     // right arrow - 39
     // down arrow - 40
     function keyDown(event){
-    event.preventDefault();
+    
     switch(true){
     //if user presses up button to move snake up
     case(event.keyCode === 38):
     if(yVelocity == 1)
             return;
-        yVelocity = -1;
-        xVelocity = 0;
+        snakeUp();
         break;
     //if user presses down button to move snake down
     case(event.keyCode === 40):
     if(yVelocity == -1)
             return;
-        yVelocity = 1;
-        xVelocity = 0;
-    break;
+        snakeDown();
+        break;
     //if user presses left button to turn snake left
     case(event.keyCode === 37):
     if(xVelocity == 1)
             return;
-        yVelocity = 0;
-        xVelocity = -1;
-    break;
+        snakeLeft();
+        break;
     //if user presses right button to turn snake right
     case(event.keyCode === 39):
     if(xVelocity == -1)
             return;
-        yVelocity = 0;
-        xVelocity = 1;
-    break;
+        snakeRight();
+        break;
     //if user presses r button to refresh the canvas by reloading page. Will trigger overlay message.
     case(event.keyCode === 82):
     location.reload();
     break;
+    }    
     }
-    }
-    
+        
     //Draws food to canvas. Set to orange in light mode and to black in darkmode
     function gameFood(){
     
@@ -265,5 +304,4 @@ class snakeBodySeg{
         score++;
     }
 }
-
 snakeGame();
