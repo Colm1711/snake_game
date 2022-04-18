@@ -252,6 +252,46 @@ section {
   cursor: pointer;
 }
 
+/*styling for arrow buttons(These are images imported from google font)*/
+.arrow-buttons-cont {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--bg);
+  font-size: 2.6em;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid var(--modal);
+  border-radius: 10px;
+  color: var(--icons);
+}
+
+.arrow-buttons{
+  width: 100%;
+}
+
+.direct{
+  padding: 7px;
+}
+
+#up-arrow{
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+#left-arrow{
+  grid-row: 2;
+}
+
+#right-arrow{
+  grid-row: 2;
+}
+
+#down-arrow{
+  grid-row: 2;
+}
+
+
 /*button styling*/
 .button{
   background-color: var(--modal);
