@@ -252,6 +252,10 @@ section {
   cursor: pointer;
 }
 
+#openModal{
+  grid-column: 2/3;
+}
+
 /*styling for arrow buttons(These are images imported from google font)*/
 .arrow-buttons-cont {
   display: grid;
@@ -264,6 +268,7 @@ section {
   border: 2px solid var(--modal);
   border-radius: 10px;
   color: var(--icons);
+  grid-column: 4/6;
 }
 
 .arrow-buttons{
