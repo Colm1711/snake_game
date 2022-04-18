@@ -98,7 +98,11 @@ This is the main marketing website for Code Institute. It is designed to be resp
 ![welcome](assets/readme-images/welcome-snake.png)
 
 - Toggle button intended to add user interaction so they can adjust website to preference which is saved to local storage.  
-![gameover](assets/readme-images/dark-toggle.png) 
+![gameover](assets/readme-images/dark-toggle.png)
+
+- Tied in with Dark mode as feature to add discovery for user when dark mode is initiated the canvas switches to classic snake screen.
+![gamelight](assets/readme-images/light-mode-snake-game.png)
+![gamedark](assets/readme-images/dark-mode-snake-game.png)
 
 - Game over that displays user score to add user interaction so they can see their score which is saved to local storage.  
 ![gameover](assets/readme-images/snake-score-game-over.png)
