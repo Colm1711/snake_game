@@ -23,7 +23,7 @@
 
 [View the live project here.](https://colm1711.github.io/snake_game/)
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+This is the main website page for my Snake Game. This website is targeted at users looking to pass some time and to have fun reliving the retro snake game that is in honor of the 3210 verison. 
 
 <h2 align="center"><img src="assets/readme-images/snake-responsive.png"></h2>
 
@@ -127,7 +127,9 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 - Scoreboard modal so users can keep track of score in real time.
 
-- Game button controls for non-keyboard users of sites
+- Game button controls hide for larger screens
+
+- More details and links to information on the retro game
 
 ### Game Features
 
