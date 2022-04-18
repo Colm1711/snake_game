@@ -65,7 +65,8 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
     -   #### Typography
         The fonts chosen were 'Mrs Sheppards' for the heading and 'Syne' for the body text. They fall back to cursive and sans-serif respectively. 
-        *  'Mrs Sheppards' was chosen for the heading to give the user an inital feeling of retro to tie in with the game. The cursive style is to increase the restor feel of the font.
+        *  'Mrs Sheppards' was chosen for the heading to give the user an inital feeling of retro to tie in with the game. The cursive style is to increase the retro feel of the font.
+        
         * 'Syne' is used for the body text as it provides a nice contrast to the cursive whilst being easy to read for all.
 
 [Back to top](<#contents>) 
