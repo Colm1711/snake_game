@@ -67,8 +67,17 @@
                     </ol>
                 </div>
             </div>
+            <!--icons to control snake game on mobile-->
+            <div class="arrow-buttons-cont">
+                <i id="up-arrow" class="fa-solid fa-circle-arrow-up direc"></i>
+                <i id="left-arrow" class="fa-solid fa-circle-arrow-left direct"></i>
+                <i id="down-arrow" class="fa-solid fa-circle-arrow-down direct"></i>
+                <i id="right-arrow" class="fa-solid fa-circle-arrow-right direct"></i>
+            </div>
             <!--this is the overlay that loads on reload-->
-            <div id="overlay"><p aria-labelledby="overlay" id="usernameMessage"></p></div>
+            <div id="overlay">
+                <p aria-labelledby="overlay" id="usernameMessage"></p>
+            </div>
         </section>
         <footer>
             <div>
@@ -89,7 +98,7 @@
                             <i aria-hidden="true" class="fa-brands fa-twitter-square"></i>
                         </a>
                     </li>
-                </ul>   
+                </ul>
                 <small class="copyright">Colm O'Sullivan 2022&copy;</small>         
             </div>
         </footer>
@@ -101,6 +110,7 @@
 <script type='module' src="assets/js/username.js"></script>
 <script type='module' src="assets/js/utilities.js"></script>
 <script type='module' src="assets/js/darkmode.js"></script>
+<script type='module' src="assets/js/move-buttons.js"></script>
 <!--fontawesome import-->
 <script src="https://kit.fontawesome.com/35fe0ba271.js" crossorigin="anonymous"></script>
 </body>
