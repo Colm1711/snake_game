@@ -316,12 +316,12 @@ section {
   grid-template-columns: repeat(6,1fr);
 }
 
+/*Header stlying for larger screen*/
 .grid h1 {
   grid-column: 2/6;
 }
 
-
-
+/* restyling of sdark mode toggle for larger screen */
 .switch {
   grid-column: 6/7;
   margin: 15px;
