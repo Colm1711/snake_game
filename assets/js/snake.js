@@ -194,28 +194,35 @@ class snakeBodySeg{
     snakeHeadY = snakeHeadY + yVelocity;
     }
 
-    
     //functions control velocity direction
     //moves snake in up direction on grid
     function snakeUp(){
+        if(yVelocity == 1)
+            return;
         yVelocity = -1;
         xVelocity = 0;
-        return
+        return;
     }
     //moves snake in down direction on grid
     function snakeDown(){
+        if(yVelocity == -1)
+            return;
         yVelocity = 1;
         xVelocity = 0;
         return
     }
     //moves snake in left direction on grid
-    function snakeLeft(){   
+    function snakeLeft(){
+        if(xVelocity == 1)
+            return;
         yVelocity = 0;
         xVelocity = -1;
         return
     }
     //moves snake in right direction on grid
     function snakeRight(){
+        if(xVelocity == -1)
+            return;
         yVelocity = 0;
         xVelocity = 1;
         return
@@ -224,18 +231,19 @@ class snakeBodySeg{
     //add event listener for keys that user presses and set direction
     document.body.addEventListener('keydown', keyDown);
 
+    //event listener for the up font awesome icon to be pressed
     document.getElementById('up-arrow').addEventListener('click', function clicked(){
         snakeUp();
     });
-
+    //event listener for the left font awesome icon to be pressed
     document.getElementById('left-arrow').addEventListener('click', function clicked(){
         snakeLeft();
     });
-
+    //event listener for the down font awesome icon to be pressed
     document.getElementById('down-arrow').addEventListener('click', function clicked(){
         snakeDown();
     });
-
+    //event listener for the right font awesome icon to be pressed
     document.getElementById('right-arrow').addEventListener('click', function clicked(){
         snakeRight();
     });
@@ -246,30 +254,22 @@ class snakeBodySeg{
     // right arrow - 39
     // down arrow - 40
     function keyDown(event){
-    
+    event.preventDefault();
     switch(true){
     //if user presses up button to move snake up
     case(event.keyCode === 38):
-    if(yVelocity == 1)
-            return;
         snakeUp();
         break;
     //if user presses down button to move snake down
     case(event.keyCode === 40):
-    if(yVelocity == -1)
-            return;
         snakeDown();
         break;
     //if user presses left button to turn snake left
     case(event.keyCode === 37):
-    if(xVelocity == 1)
-            return;
         snakeLeft();
         break;
     //if user presses right button to turn snake right
     case(event.keyCode === 39):
-    if(xVelocity == -1)
-            return;
         snakeRight();
         break;
     //if user presses r button to refresh the canvas by reloading page. Will trigger overlay message.
