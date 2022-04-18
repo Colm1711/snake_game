@@ -90,7 +90,8 @@ section {
 .grid h1 {
   display: grid;
   align-items: end;
-  grid-column: 2/6;
+  grid-column: 1/7;
+  grid-row: 2;
   font-family: 'Mrs Sheppards', cursive;
   font-size: 4em;
   justify-content: center;
@@ -104,8 +105,9 @@ section {
     display: flex;
     max-width: 4em;
     height: 2em;
-    grid-column: 6/7;
-    margin-top: 15px;
+    grid-column: 5/7;
+    grid-row: 1;
+    margin: 15px 0px 0px 20px;
   }
   
   /* Hide default HTML checkbox */
@@ -174,6 +176,7 @@ section {
     justify-content: space-evenly;
     font-size: 2em;
     padding-top: 1.3em;
+    padding-left: 1px;
   }
 
 /* Set colors of social icons */
@@ -311,6 +314,17 @@ section {
 .body-grid{
   display: grid;
   grid-template-columns: repeat(6,1fr);
+}
+
+.grid h1 {
+  grid-column: 2/6;
+}
+
+
+
+.switch {
+  grid-column: 6/7;
+  margin: 15px;
 }
 
 /* makes sure social icons don't strech with FLex settings as screen increases */
