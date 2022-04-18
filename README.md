@@ -91,7 +91,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 - Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
 
-- Though not originally part of the original design for the site with this sites repsonsiveness it was decided to add buttons to ensure that all users can play game on various screens that do not support keyboards. 
+- Though not part of the original design, with this sites repsonsiveness it was decided to add buttons to ensure that all users can play game on various screens that do not support keyboards.  
 ![buttons](assets/readme-images/mobile-buttons.png)
 
 - Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:  
@@ -210,14 +210,14 @@ Snake site has been throughly tested. All the code has been run through the [W3C
     2. As a First Time Visitor, I want to be able to easily navigate around the site to find content and discover new features.
         * As single page site features are kept in at heart of page near the hero game element.
     3. As a First Time Visitor, I want to  want to locate their social media links to see their followings on social media.
-        * Sccial media links are kept in traditional location of footer so user is can easily locate. 
+        * Social media links are kept in traditional location of footer so user is can easily locate. 
 
 -   #### Returning Visitor Goals
 
     1. As a Returning Visitor, I want to find new features and interactions that are available on the site.
-        * There are features such as dark mode, game music and game instructions located on site.
+        * There are features such as dark mode, game music, game buttons and game instructions located on site.
     2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have via media links.
-        * Sccial media links are kept in traditional location of footer so user is can easily locate.
+        * Social media links are kept in traditional location of footer so user is can easily locate.
 
 -   #### Frequent User Goals
     1. As a Frequent User, I want to check to see if there are any newly added challenges or levels.
@@ -235,7 +235,7 @@ Snake site has been throughly tested. All the code has been run through the [W3C
 ### Known Bugs
 
 -   Score is not updating correctly, need to set at -1 to have displayed as 0.
-    1. When script.js is called and snakeGame function runs it increments score by one. Currently score var is set to 0 which leads score to 1. Temporary solution was to set score to 0.
+    1. When script.js is called and snakeGame function runs it increments score by one. Currently score var is set to 0 which leads score to 1.
 
 -   On desktop screens there is a white space appearing at end of page.(RESOLVED)
     1. Due to CSS default settings HTML and body were not filling browser page as screen width increased. This has now been resolved by setting HTML and Body height to 100%.
