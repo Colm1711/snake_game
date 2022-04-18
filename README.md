@@ -129,6 +129,20 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 - Game button controls for non-keyboard users of sites
 
+### Game Features
+
+- Score display keep track of food eaten
+
+- Display change in dark mode
+
+- Speed increase for difficulty
+
+- Collision detection
+
+- Keyboard and onscreen display controls
+
+- Music button
+
 [Back to top](<#contents>)
 
 ## Technologies Used
@@ -236,13 +250,16 @@ Snake site has been throughly tested. All the code has been run through the [W3C
 ### Known Bugs
 
 -   Score is not updating correctly, need to set at -1 to have displayed as 0.
-    1. When script.js is called and snakeGame function runs it increments score by one. Currently score var is set to 0 which leads score to 1.
+    * When script.js is called and snakeGame function runs it increments score by one. Currently score var is set to 0 which leads score to 1.
 
--   On desktop screens there is a white space appearing at end of page.(RESOLVED)
-    1. Due to CSS default settings HTML and body were not filling browser page as screen width increased. This has now been resolved by setting HTML and Body height to 100%.
+-   On desktop screens there is a white space appearing at end of page.(RESOLVED)  
+    * Due to CSS default settings HTML and body were not filling browser page as screen width increased. This has now been resolved by setting HTML and Body height to 100%.
 
 -   Light mode sometimes displays the dark mode canvas screen.(RESOLVED)
-    1. When intially loading the page on Light mode game canvas was returning the dark mode dispaly. This was due to logic of if else statement. Updated to check if dark mode is set in local storage and if any other return object set light mode. 
+    * When intially loading the page on Light mode game canvas was returning the dark mode dispaly. This was due to logic of if else statement. Updated to check if dark mode is set in local storage and if any other return object set light mode.
+
+-   Self collision detection was not working for buttons.(RESOLVED)
+    * snakeUp, snakeDown, snakeRight & snakeLeft did not have self collision dection enabled. Refactored code from key codes to functions.   
 
 [Back to top](<#contents>)
 
