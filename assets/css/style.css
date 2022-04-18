@@ -276,8 +276,8 @@ section {
 }
 
 .direct{
-  padding: 7px;
-}
+  padding: 12px
+;}
 
 #up-arrow{
   grid-row: 1;
