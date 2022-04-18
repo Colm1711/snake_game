@@ -35,7 +35,7 @@ class snakeBodySeg{
     
     //set score for start of game
     //BUG HERE AS WHEN SET TO ZERO IT IS RETURNING ONE AS STARTING SCORE
-    let score = score - 1;
+    let score = -1;
     //create food object starting position
     let foodX = 5;
     let foodY = 5;
