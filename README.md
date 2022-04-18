@@ -1,7 +1,6 @@
-<h1 align="center"><img src="assets/readme-images/snake-header.png" width="700" /> </h1>  
+<h1 align="center"><img src="assets/readme-images/snake-header.png"/></h1>
 
 # Contents
-
 * [**User Experience UX**](<#user-experience-ux>)
     *  [User Stories](<#user-stories>)
     * [Design](<#design>)
@@ -53,15 +52,15 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
         - Light mode:  
 
-        <img src="assets/readme-images/green-light.png" width="300"/>  
+        ![lightgreen](assets/readme-images/green-light.png)
 
-        <img src="assets/readme-images/purple-light.png" width="300"/>  
+        ![lightpurple](assets/readme-images/purple-light.png)
 
         - Dark mode:  
 
-        <img src="assets/readme-images/green-dark.png" width="300"/>  
+        ![darkgreen](assets/readme-images/green-dark.png) 
 
-        <img src="assets/readme-images/purple-dark.png" width="300"/>
+        ![darkpurple](assets/readme-images/purple-dark.png)
         
 
     -   #### Typography
@@ -76,13 +75,13 @@ This is the main marketing website for Code Institute. It is designed to be resp
     The wireframes for Snake game were produced in Balsamiq. They were designed for a full width display and with mobile device first desgin approach. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
     * Mobile wireframe image  
-    <img src="assets/readme-images/snake-mobile.png" width="600"/> 
+     ![mobile](assets/readme-images/snake-mobile.png)
 
     * Tablet wireframe image  
-    <img src="assets/readme-images/snake-tablet.png" width="600"/> 
+    ![tablet](assets/readme-images/snake-tablet.png)  
 
     * Desktop wireframe image  
-    <img src="assets/readme-images/snake-website.png" width="600"/> 
+    ![desktop](assets/readme-images/snake-website.png)
 
 [Back to top](<#contents>)
 
@@ -92,24 +91,29 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 -   Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
 
-- Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:
-<img src="assets/readme-images/snake-header.png" width="700"/> 
+- Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:  
+![header](assets/readme-images/snake-header.png)
 
 - User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage.  
-<img src="assets/readme-images/welcome-snake.png" width="700"/> 
+![welcome](assets/readme-images/welcome-snake.png)
 
 - Toggle button intended to add user interaction so they can adjust website to preference which is saved to local storage.  
-<img src="assets/readme-images/snake-score-game-over.png" width="700"/> 
+![gameover](assets/readme-images/dark-toggle.png) 
 
-- Modal button is there as interaction point for user. They can click on this to learn more about the game and how to play.
-<img src="assets/readme-images/snake-modal.png" width="700"/> 
+- Game over that displays user score to add user interaction so they can see their score which is saved to local storage.  
+![gameover](assets/readme-images/snake-score-game-over.png)
+
+
+- Modal button is there as interaction point for user. They can click on this to learn more about the game and how to play.  
+![modal](assets/readme-images/snake-modal.png)
+
 
 - Unmute/Mute button, added to give user more interaction with website to play music while playing snake game.
-<img src="assets/readme-images/snake-mute.png" width="700" height="400" />  
-<img src="assets/readme-images/snake-unmute.png"  width="700" height="400"/> 
+![mute](assets/readme-images/snake-mute.png)
+![unmute](assets/readme-images/snake-unmute.png)
 
 - This section is last part of users journey through site which holds copyright information and also links to social media if user wants to persuse more information on developer and game.  
-<img src="assets/readme-images/snake-footer.png" width="700"/> 
+![footer](assets/readme-images/snake-footer.png)
 
 ### Future Features
 
@@ -150,43 +154,43 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 Snake site has been throughly tested. All the code has been run through the [W3C html Validator](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) & [JSHint](https://jshint.com/) sites. Minor errors were found on main page and in the script.js. After a fix of sheets and retest, no errors were returned for both. 
 
-1. HTML Validation:
-<img src="assets/readme-images/snake-html-val.png"/>  
+1. HTML Validation:  
+![html](assets/readme-images/snake-html-val.png)
 
-1. CSS Validation:
-<img src="assets/readme-images/snake-css-val.png"/> 
+2. CSS Validation:  
+![css](assets/readme-images/snake-css-val.png)
 
-1. Snake Validation:  
-<img src="assets/readme-images/snake-script,js.png"/> 
+3. Snake Validation:  
+![snakeval](assets/readme-images/snake-script,js.png)  
 
-1. Username Validation:  
-<img src="assets/readme-images/username,js.png"/> 
+4. Username Validation:  
+![username](assets/readme-images/username,js.png)
 
-1. Darkmode Validation:  
-<img src="assets/readme-images/darkmode,js.png"/> 
+5. Darkmode Validation:  
+![darkval](assets/readme-images/darkmode,js.png)  
 
-1. Utils Validation:  
-<img src="assets/readme-images/snake-utils,js.png"/> 
+6. Utils Validation:  
+![utilsval](assets/readme-images/snake-utils,js.png)  
 
 ### Responsive
 
-|        | Pixel     | iPhone 6 | iPad | iPad Pro | Display <1200px | Display >1200px |
+|        | Oneplus   | iPhone 6 | iPad | Xiaomi   | Display <1200px | Display >1200px |
 |--------|-----------|----------|------|----------|-----------------|-----------------|
 | Render | pass      | pass     | pass | pass     | pass            | pass            |
 
 ### Lighthouse
 
 #### Mobile  
-<img src="assets/readme-images/snake-game-mobile-lighthouse.png"/>  
+![moblighthouse](assets/readme-images/snake-game-mobile-lighthouse.png)
+* Mobile results were affected(86%) by audio file, but after compressing this reduced performance hit and brought score to 99%.  
 
-*   Mobile results were affected(86%) by audio file, but after compressing this reduced performance hit and brought score to 99%.
 
-#### Desktop
-<img src="assets/readme-images/snake-game-desktop-lighthouse.png"/>   
+#### Desktop  
+![desklighthouse](assets/readme-images/snake-game-desktop-lighthouse.png) 
 
-*   Best practices for both lighthouse tests were affected by github related errors logging to console:
+* Best practices for both lighthouse tests were affected by github related errors logging to console:  
 
-<img src="assets/readme-images/best-prac-snake.png"/> 
+![bestpractices](assets/readme-images/best-prac-snake.png) 
 
 ### Testing User Stories from User Experience (UX) Section
 
