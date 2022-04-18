@@ -89,7 +89,10 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 ### Current Features
 
--   Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
+- Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
+
+- Though not originally part of the original design for the site with this sites repsonsiveness it was decided to add buttons to ensure that all users can play game on various screens that do not support keyboards. 
+![buttons](assets/readme-images/mobile-buttons.png)
 
 - Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:  
 ![header](assets/readme-images/snake-header.png)
