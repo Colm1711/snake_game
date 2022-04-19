@@ -23,7 +23,7 @@
 
 [View the live project here.](https://colm1711.github.io/snake_game/)
 
-This is the main website page for my Snake Game. This website is targeted at users looking to pass some time and to have fun reliving the retro snake game that is in honor of the 3210 verison. 
+This is the main website page for the Snake Game. This website is targeted at users looking to have fun, spend time reliving the retro snake game that is in honor of the 3210 verison & to pass some time while they are at the bus stop, in a waiting office, at lunch or just when the mood is right! 
 
 <h2 align="center"><img src="assets/readme-images/snake-responsive.png"></h2>
 
@@ -92,23 +92,23 @@ This is the main website page for my Snake Game. This website is targeted at use
 
 - Responsive on all device sizes with mobile site first design in mind with grid containors used to keep focus of content in center of screen as device screen size increases.
 
-- Though not part of the original design, with this sites repsonsiveness it was decided to add buttons to ensure that all users can play game on various screens that do not support keyboards.  
+- Though not part of the original design, with this sites repsonsiveness it was decided to add buttons to ensure that all users can play game on various screens that do not support keyboards. This benefits the user as not limited by device or having keyboard.
 ![buttons](assets/readme-images/mobile-buttons.png)
 
-- Header is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:  
+- Header is to immeadiately provide user with purpose of the site & is designed with retro style in mind to tie user in with game 'classic' nature. This is most highlighted when user switches to dark mode:  
 ![header](assets/readme-images/snake-header.png)
 
-- User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage.  
+- User is presented with welcome message which is intended to outline main purpose of site which is to play snake game. Users name is saved in session storage for next game and they do not have to re-enter.  
 ![welcome](assets/readme-images/welcome-snake.png)
 
-- Toggle button intended to add user interaction so they can adjust website to preference which is saved to local storage.  
+- Toggle button intended to add user interaction so they can adjust website to preference which is saved to local storage. Adds discovery to the page.
 ![gameover](assets/readme-images/dark-toggle.png)
 
-- Tied in with Dark mode as feature to add discovery for user when dark mode is initiated the canvas switches to classic snake screen.
+- Tied in with Dark mode as feature to add discovery for user when dark mode is initiated the canvas switches to classic snake screen. Adds to user experience by adding nostalgia and also discovery for new users.
 ![gamelight](assets/readme-images/light-mode-snake-game.png)
 ![gamedark](assets/readme-images/dark-mode-snake-game.png)
 
-- Game over that displays user score to add user interaction so they can see their score which is saved to local storage.  
+- Game over that displays user score to add user interaction so they can see their score which is saved to local storage. Adds to user experience.
 ![gameover](assets/readme-images/snake-score-game-over.png)
 
 
@@ -116,7 +116,7 @@ This is the main website page for my Snake Game. This website is targeted at use
 ![modal](assets/readme-images/snake-modal.png)
 
 
-- Unmute/Mute button, added to give user more interaction with website to play music while playing snake game.
+- Unmute/Mute button, added to give user more interaction with website to play music while playing snake game. Adds to user experience and discovery of more features.
 ![mute](assets/readme-images/snake-mute.png)
 ![unmute](assets/readme-images/snake-unmute.png)
 
@@ -125,7 +125,7 @@ This is the main website page for my Snake Game. This website is targeted at use
 
 ### Future Features
 
-- Scoreboard modal so users can keep track of score in real time.
+- Scoreboard modal so users can record & keep track of scores across games.
 
 - Game button controls hide for larger screens
 
@@ -133,17 +133,17 @@ This is the main website page for my Snake Game. This website is targeted at use
 
 ### Game Features
 
-- Score display keep track of food eaten
+- Score display keep track of food eaten in real time.
 
-- Display change in dark mode
+- Display change in dark mode.
 
-- Speed increase for difficulty
+- Speed increase for difficulty.
 
-- Collision detection
+- Collision detection for walls and body.
 
-- Keyboard and onscreen display controls
+- Keyboard and onscreen display controls.
 
-- Music button
+- Music with umute and mute features.
 
 [Back to top](<#contents>)
 
